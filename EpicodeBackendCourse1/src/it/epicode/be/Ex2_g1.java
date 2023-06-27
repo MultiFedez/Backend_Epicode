@@ -1,16 +1,19 @@
 package it.epicode.be;
 
-public class Helloworld {
-
+public class Ex2_g1 {
+	static String[] arrFive = {"Ciao", "Epicode", "Java", "Luglio", "Lezioni"};
+	
 public static void main (String[] args)
 		{
-		String[] arrFive = {"Ciao", "Epicode", "Java", "Luglio", "Lezioni"};
 		// Stampa a console la frase
 		System.out.println("This is my first Epicode Java Project!");
 		System.out.println(moltiplica(10,20));
 		System.out.println(concatena("Federico", 34));
 		String[] resInserisciInArray = inserisciInArray(arrFive, "Test");
-		for (int i = 0; i <)
+		
+		for(int i =0; i < arrFive.length; i++) {
+			System.out.println(resInserisciInArray[i]);
+		}
 		}
 
 // Method Moltiplica
