@@ -2,4 +2,8 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="Interface.ILuminosita"/>
+    <fullyQualifiedTypeName name="Classi.RegistrazioneAudio"/>
+    <fullyQualifiedTypeName name="Classi.Immagine"/>
+    <fullyQualifiedTypeName name="Classi.Video"/>
 </qualifiedTypeNameHistroy>
