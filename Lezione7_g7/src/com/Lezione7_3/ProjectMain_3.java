@@ -36,7 +36,16 @@ public class ProjectMain_3 {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+	/* il blocco di codice try-catch cattura e gestisce le eccezioni di tipo 
+	 * ContainsKeyExceptions e di tipo generico Exception
+	     
+	per l'eccezione di tipo ContainsKeyExceptions, viene stampato il messaggio 
+	di errore associato all'eccezione (si trova nell'aggiunta e 
+	nella rimozione del contatto) 
+	per tutte le altre eccezioni di tipo Exception, viene stampato lo stack trace
+	 completo => 
+	indica che il blocco di codice verrà eseguito per qualsiasi altra eccezione
+	 di tipo generico Exception*/
 		
 	}
 	
