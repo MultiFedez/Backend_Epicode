@@ -1,0 +1,14 @@
+16:37:20.299 [main] INFO  com.Lezione7.ProjectMain - Inserisci un numero di elementi: 
+16:37:28.443 [main] INFO  com.Lezione7.ProjectMain - Inserisci una parola
+16:37:38.402 [main] INFO  com.Lezione7.ProjectMain - Inserisci una parola
+16:37:42.810 [main] INFO  com.Lezione7.ProjectMain - Inserisci una parola
+16:37:45.473 [main] INFO  com.Lezione7.ProjectMain - Inserisci una parola
+16:37:50.484 [main] INFO  com.Lezione7.ProjectMain - Inserisci una parola
+16:37:52.082 [main] INFO  com.Lezione7.ProjectMain - Parole duplicate:
+16:37:52.082 [main] INFO  com.Lezione7.ProjectMain - federico
+16:37:52.082 [main] INFO  com.Lezione7.ProjectMain - ciao
+16:37:52.082 [main] INFO  com.Lezione7.ProjectMain - Numero di parole distinte: 3
+16:37:52.084 [main] INFO  com.Lezione7.ProjectMain - Elenco parole distinte:
+16:37:52.084 [main] INFO  com.Lezione7.ProjectMain - federico
+16:37:52.084 [main] INFO  com.Lezione7.ProjectMain - francesca
+16:37:52.084 [main] INFO  com.Lezione7.ProjectMain - ciao
