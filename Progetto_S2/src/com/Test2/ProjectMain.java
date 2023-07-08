@@ -35,12 +35,13 @@ public class ProjectMain {
 	
 	// METODI LANCIATI
 	
-	//mostraLista(catLog);
-	//removeFromCatalogo(12345678);
-	//mostraLista(catLog);
+	mostraLista(catLog);
+	removeFromCatalogo(12345678);
+	mostraLista(catLog);
 	searchForIsbn(52854741);
 	searchForYear(1888);
 	searchByeAuthor("Yuval Noah Harari");
+	caricamento();
 	}
 	
 	// PUNTO 1 AGGIUNTA
@@ -50,7 +51,8 @@ public class ProjectMain {
 	public static void mostraLista(List<CatalogoBibliotecario> l) {
 		for(int i = 0; i< l.size(); i++) {
 			logger.info("Elemento : " + l.get(i));
-		}	
+		}
+		System.out.println("--------------------------------------------------------------------");
 	}
 	
 	// PUNTO 2 RIMOZIONE
@@ -59,9 +61,10 @@ public class ProjectMain {
 				.filter(p -> p.getCodiceIsbn() == Isbn)
 				.collect(Collectors.toList());
 		rem.forEach(p -> catLog.remove(p));
-		System.out.println("Elemento eliminato correttamente");
-		return catLog;
-		
+		logger.info("Elemento eliminato correttamente");
+		System.out.println("--------------------------------------------------------------------");
+		return catLog;	
+			
 	}
 	
 	// PUNTO 3 RICERCA PER ISBN
@@ -71,6 +74,7 @@ public class ProjectMain {
 				.collect(Collectors.toList());
 		rem.forEach(p -> 
 			   logger.info("Codice ISBN :" + p.getCodiceIsbn()));
+		System.out.println("--------------------------------------------------------------------");
 	}
 	
 	// PUNTO 4 RICERCA PER ANNO DI PUBBLICAZIONE
@@ -80,6 +84,7 @@ public class ProjectMain {
 				.collect(Collectors.toList());
 		rem.forEach(p -> 
 			   logger.info("Anno Pubblicazione :" + p.getAnnoPubblicazione()));
+		System.out.println("--------------------------------------------------------------------");
 	}	
 	
 	// PUNTO 5 RICERCA PER AUTORE
@@ -87,25 +92,35 @@ public class ProjectMain {
         List<Libri> rem = catLog.stream()
                  .filter(p -> p instanceof Libri)
                  .map(p -> (Libri)p)
-                 .filter(p -> p.getAutore() == autore)
+                 .filter(p -> p.getAutore().equals(autore))
                  .collect(Collectors.toList());
         rem.forEach(p -> {
         	   logger.info("Autore :" + p.getAutore());
+        	   System.out.println("--------------------------------------------------------------------");
            });  
     }
 	
 	// PUNTO 6 SALVATAGGIO SU DISCO DELL'ARCHIVIO
 	public static void salvataggio(CatalogoBibliotecario s){
-	try {
-        FileUtils.writeStringToFile(f, f.toString() , "UTF-8", true);
-    } catch (IOException e) {
-        e.printStackTrace();
+		try {
+			FileUtils.writeStringToFile(f,s.toString() + "#","UTF-8", true);
+		} catch (IOException e) {
+			e.printStackTrace();
     }}
 	public static void deleteFile(){
         FileUtils.deleteQuietly(f);
     }
 	
-	
-	
 	// PUNTO 7 CARICAMENTO DAL DISCO DELL'ARCHIVIO
+	public static void caricamento() {
+		try {
+			String stringaCompleta = FileUtils.readFileToString(f,"UTF-8");
+			String[] array = stringaCompleta.split("#");
+			for(String s : array) {
+				System.out.println(s);
+			}
+		} catch (IOException e) {
+	        e.printStackTrace();
+	    }	
+	}
 }
