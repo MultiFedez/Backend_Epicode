@@ -6,13 +6,14 @@ import utils.JpaUtil;
 
 public class EventoDAO {
 	
-	public static void save(Evento e) {
+	public void save(Evento e) {
 		EntityManager em = JpaUtil.getEntityManagerFactory().createEntityManager();
 		
 		try {
 		em.getTransaction().begin();
 		em.persist(e);
 		em.getTransaction().commit();
+		System.out.println(e);
 		}catch (Exception ex) {
 			System.out.println(ex.getMessage());
 		}finally {
