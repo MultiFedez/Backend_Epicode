@@ -19,11 +19,6 @@ public class Riviste extends CatalogoBibliotecario{
 		super();
 	}
 
-	public Riviste(Periodicita periodicita) {
-		super();
-		this.periodicita = periodicita;
-	}
-
 	public Periodicita getPeriodicita() {
 		return periodicita;
 	}
@@ -34,7 +29,7 @@ public class Riviste extends CatalogoBibliotecario{
 
 	@Override
 	public String toString() {
-		return "Riviste [periodicita=" + periodicita + "]";
+		return "Riviste ["+ super.toString() +" periodicita=" + periodicita + "]";
 	}
 	
 	

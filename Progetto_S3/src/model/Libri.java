@@ -14,12 +14,6 @@ public class Libri extends CatalogoBibliotecario {
 		super();
 	}
 
-	public Libri(String autore, String genere) {
-		super();
-		Autore = autore;
-		Genere = genere;
-	}
-
 	public String getAutore() {
 		return Autore;
 	}
@@ -35,7 +29,7 @@ public class Libri extends CatalogoBibliotecario {
 
 	@Override
 	public String toString() {
-		return "Libri [Autore=" + Autore + ", Genere=" + Genere + "]";
+		return "Libri ["+ super.toString() + "Autore=" + Autore + ", Genere=" + Genere + "]";
 	}
 	
 	

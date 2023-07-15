@@ -18,9 +18,9 @@ public class Prestito{
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne
 	private CatalogoBibliotecario elementoPrestato;
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne
 	private Utente utente;
 	@Column(name = "dataInizioPrestito")
 	private LocalDate dataIniziPrestito;

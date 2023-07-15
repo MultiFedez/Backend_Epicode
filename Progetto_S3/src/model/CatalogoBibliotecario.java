@@ -9,12 +9,15 @@ import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.Table;
 import javax.persistence.InheritanceType;
+import javax.persistence.NamedQuery;
 
 @Entity
 @Table(name="CatalogoBibliotecario")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "TipoContenuto", discriminatorType = DiscriminatorType.STRING)
-
+@NamedQuery(name = "searchForYear", query = "SELECT e FROM CatalogoBibliotecario e WHERE e.annoPubblicazione = :year")
+@NamedQuery(name = "searchForAuthor", query = "SELECT e FROM CatalogoBibliotecario e WHERE e.Autore LIKE :author")
+@NamedQuery(name = "searchForTitle", query = "SELECT e FROM CatalogoBibliotecario e WHERE e.titolo LIKE :title")
 public class CatalogoBibliotecario {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
