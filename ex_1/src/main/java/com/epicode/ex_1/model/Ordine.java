@@ -8,11 +8,13 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
+@ToString
 public class Ordine {
 	
 	private Integer numeroOrdine;
@@ -20,8 +22,9 @@ public class Ordine {
 	private Integer numeroCoperti;
 	private LocalTime oraAcquisizioneOrdine;
 	private Double costoCoperto;
+	private Tavolo tavolo;
 	private Map<FoodItem, Integer> ordinato = new HashMap<FoodItem, Integer>();
-
+	
 	public void addMenuItem(FoodItem item) {
 		if(!ordinato.containsKey(item)) {
 			ordinato.put(item, 1);
@@ -52,4 +55,5 @@ public class Ordine {
 		
 		System.out.println("Il totale del tuo ordine è " + totale);
 	}
+
 }
