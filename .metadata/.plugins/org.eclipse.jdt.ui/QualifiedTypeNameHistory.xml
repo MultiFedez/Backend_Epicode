@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.PropertySource"/>
-    <fullyQualifiedTypeName name="org.slf4j.Logger"/>
     <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
     <fullyQualifiedTypeName name="com.epicode.gestione_p.repository.UtenteDAORepo"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="com.epicode.gestione_p2.model.Utente2"/>
     <fullyQualifiedTypeName name="com.epicode.gestione_p2.model.Prenotazione2"/>
     <fullyQualifiedTypeName name="com.epicode.gestione_p2.model.Tipo2"/>
+    <fullyQualifiedTypeName name="com.epicode.Spring.security.security.JwtAuthenticationEntryPoint"/>
+    <fullyQualifiedTypeName name="com.epicode.Spring.security.payload.ErrorDetails"/>
 </qualifiedTypeNameHistroy>
