@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
-    <fullyQualifiedTypeName name="com.epicode.gestione_p.repository.UtenteDAORepo"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
-    <fullyQualifiedTypeName name="com.epicode.gestione_p.repository.PrenotazioneDAORepo"/>
-    <fullyQualifiedTypeName name="com.epicode.gestione_p.repository.PostazioneDAORepo"/>
-    <fullyQualifiedTypeName name="com.epicode.gestione_p.repository.EdificioDAORepo"/>
-    <fullyQualifiedTypeName name="org.springframework.boot.CommandLineRunner"/>
-    <fullyQualifiedTypeName name="com.epicode.gestione_p.service.EdificioService"/>
-    <fullyQualifiedTypeName name="com.epicode.gestione_p.service.PostazioneService"/>
-    <fullyQualifiedTypeName name="com.epicode.gestione_p.service.PrenotazioneService"/>
-    <fullyQualifiedTypeName name="com.epicode.gestione_p.service.UtenteService"/>
-    <fullyQualifiedTypeName name="com.epicode.gestione_p.model.Edificio"/>
     <fullyQualifiedTypeName name="com.epicode.gestione_p.model.Tipo"/>
     <fullyQualifiedTypeName name="com.epicode.gestione_p.model.Postazione"/>
     <fullyQualifiedTypeName name="com.epicode.gestione_p.model.Utente"/>
@@ -20,15 +8,7 @@
     <fullyQualifiedTypeName name="org.hibernate.mapping.List"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
-    <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="lombok.Builder"/>
-    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
-    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.Table"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
@@ -47,7 +27,6 @@
     <fullyQualifiedTypeName name="com.epicode.gestione_p2.repository.Edificio2DAORepo"/>
     <fullyQualifiedTypeName name="com.epicode.gestione_p2.repository.Postazione2DAORepo"/>
     <fullyQualifiedTypeName name="com.epicode.gestione_p2.repository.Prenotazione2DAORepo"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="com.epicode.gestione_p2.repository.Utente2DAORepo"/>
     <fullyQualifiedTypeName name="com.epicode.gestione_p2.service.Edificio2Service"/>
     <fullyQualifiedTypeName name="com.epicode.gestione_p2.service.Postazione2Service"/>
@@ -60,4 +39,25 @@
     <fullyQualifiedTypeName name="com.epicode.gestione_p2.model.Tipo2"/>
     <fullyQualifiedTypeName name="com.epicode.Spring.security.security.JwtAuthenticationEntryPoint"/>
     <fullyQualifiedTypeName name="com.epicode.Spring.security.payload.ErrorDetails"/>
+    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Table"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Inheritance"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.DiscriminatorColumn"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Enumerated"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.ManyToOne"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.DiscriminatorValue"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="com.epicode.gestione_device.security.repository.DispositivoRepository"/>
+    <fullyQualifiedTypeName name="com.epicode.gestione_device.security.entity.Smartphone"/>
+    <fullyQualifiedTypeName name="com.epicode.gestione_device.security.entity.Tablet"/>
+    <fullyQualifiedTypeName name="com.epicode.gestione_device.security.entity.Laptop"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+    <fullyQualifiedTypeName name="com.epicode.gestione_device.security.entity.Dispositivo"/>
 </qualifiedTypeNameHistroy>
